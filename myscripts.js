@@ -1,4 +1,14 @@
-let container = document.getElementById("grid");
-let cell = document.createElement("div");
-cell.innerHTML = "TEXT";
-container.appendChild(cell);
+const createMultipleDivs = (userNum) =>{
+    for(let i = 1; i <= userNum; i++){
+        const newDiv = document.createElement("div");
+        const newContent = document.createTextNode(i);
+        newDiv.appendChild(newContent);
+        const currentDiv = document.getElementById("main");
+        document.body.insertBefore(newDiv, currentDiv);
+    }
+}
+const getInfo = () =>{
+   let userNum = document.getElementById('number').value;
+   userNum *= userNum
+   createMultipleDivs(userNum)
+}
