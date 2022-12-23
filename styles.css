@@ -1,6 +1,6 @@
 #main {
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-columns: auto auto auto auto;
     margin: 50px;
 }
 h1 {
@@ -9,17 +9,9 @@ h1 {
 .newDiv {
     text-align: center;
     background-color: black;
-    color: white;
+    color: blue;
 }
-.newDiv:hover {
+
+.newDiv .finalDiv{
     background-color: blue;
 }
-/*.newDiv {
-    width: 50px;
-    height: 50px;
-    background: red;
-    position: absolute;
-    left: var(--mouse-x);
-    top: var(--mouse-y);
-}
-*/
