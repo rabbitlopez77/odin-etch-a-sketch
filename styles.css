@@ -2,7 +2,14 @@
     display: flex;
     background-color: black;
     color: white;
+    
 }
 h1 {
     text-align: center;
+}
+.newDiv {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
 }

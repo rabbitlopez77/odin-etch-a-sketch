@@ -1,11 +1,12 @@
 const createMultipleDivs = (userNum) =>{
     for(let i = 1; i <= userNum; i++){
         const newDiv = document.createElement("div");
-        newDiv.setAttribute('id', `div-${i}`)
+        newDiv.setAttribute('class', 'newDiv')
         const newContent = document.createTextNode(i);
         newDiv.appendChild(newContent);
         const currentDiv = document.getElementById("main");
-        document.body.insertBefore(newDiv, currentDiv);
+        currentDiv.appendChild(newDiv)
+        //document.body.insertBefore(newDiv, currentDiv);
     }
 }
 const getInfo = () =>{
