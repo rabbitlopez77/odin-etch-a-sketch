@@ -1,17 +1,47 @@
-#main {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin: 50px;
-}
-h1 {
-    text-align: center;
-}
-.newDiv {
-    text-align: center;
-    background-color: black;
-    color: blue;
-}
 
-.newDiv .finalDiv{
-    background-color: blue;
+#root {
+    margin-top: 25px;
+    margin-right: 40px;
+    border: 10px solid black;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+
+  }
+
+.gridContainer {
+    width: 97%;
+    height: 97%;
+    z-index: 3;
+
+
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .finalDiv {
+    background-color: black;
+  }
+  h1 {
+    text-align: center;
+  }
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
 }

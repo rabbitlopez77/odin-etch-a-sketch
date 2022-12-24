@@ -8,13 +8,12 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <script src="myscripts.js"></script>
     <h1>Etch-a-Sketch</h1>
-    <div id="container"  >
-        <div id="main"></div>
+    <div id="root"  >
     </div>
-    <input type="number" id="number" >
-    <input type="button" value="Submit" onclick="getInfo()">
-    
+<button  onclick="createGrid()">Reset Grid</button>
+<button id="eraserButton" onclick="toggleEraser()">Eraser</button>
+<button id="shapeToggle" onclick="toggleSquare()">Square</button>
+<script src="myscripts.js"></script>
 </body>
 </html>
